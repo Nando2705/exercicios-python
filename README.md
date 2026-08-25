@@ -23,6 +23,9 @@ Os exercícios serão adicionados progressivamente conforme avanço nos estudos.
 | ---------------------------------- | ------------------- | ------------------------------------------ |
 | [Exercício 078](./exercicio078.py) | Maior e menor valor | Listas, `for`, `enumerate()`, condicionais 
 | [Exercício 079](https://github.com/Nando2705/exercicios-python/blob/main/079_valores_unicos.py) | Valores únicos | Listas, `while`, condicionais, `not in`, `append()`, `sort()` |
+| [Exercício 081](https://github.com/Nando2705/exercicios-python/blob/main/081_Extraindo_dados) | Lista decrescente e busca de valor | Listas, `while`, `len()`, `sort()`, `in`, condicionais |
+
+
 
 > A tabela será atualizada conforme novos exercícios forem adicionados ao repositório.
 
