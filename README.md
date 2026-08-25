@@ -24,6 +24,7 @@ Os exercícios serão adicionados progressivamente conforme avanço nos estudos.
 | [Exercício 078](./exercicio078.py) | Maior e menor valor | Listas, `for`, `enumerate()`, condicionais 
 | [Exercício 079](https://github.com/Nando2705/exercicios-python/blob/main/079_valores_unicos.py) | Valores únicos | Listas, `while`, condicionais, `not in`, `append()`, `sort()` |
 | [Exercício 081](https://github.com/Nando2705/exercicios-python/blob/main/081_Extraindo_dados) | Lista decrescente e busca de valor | Listas, `while`, `len()`, `sort()`, `in`, condicionais |
+| [Exercício 082](https://github.com/Nando2705/exercicios-python/blob/main/082_Dividindo_valores) | Separação de números pares e ímpares | Listas, `while`, `for`, `enumerate()`, `append()`, operador `%`, condicionais |
 
 
 
