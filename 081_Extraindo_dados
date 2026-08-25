@@ -1,0 +1,51 @@
+# Cria uma lista vazia para armazenar os valores digitados
+valores = []
+
+# Define 'S' como resposta inicial para iniciar o programa
+resp = 'S'
+
+
+# Enquanto o usuário responder 'S', o programa continuará
+while resp == 'S':
+
+    # Solicita um número ao usuário e transforma o valor em inteiro
+    valor = int(input('Digite um valor: '))
+
+    # Adiciona o número digitado à lista
+    valores.append(valor)
+
+    # Pergunta se o usuário deseja continuar
+    # upper() transforma a resposta em maiúscula
+    # strip() remove espaços antes e depois da resposta
+    resp = input('Quer continuar? [S/N]: ').upper().strip()
+
+    # Enquanto a resposta não for 'S' nem 'N',
+    # continua pedindo uma resposta válida
+    while resp != 'S' and resp != 'N':
+
+        resp = input(
+            'Valor inválido! Digite novamente: [S/N]: '
+        ).upper().strip()
+
+
+# Organiza a lista em ordem decrescente
+# reverse=True faz a ordenação do maior para o menor
+valores.sort(reverse=True)
+
+
+# Exibe uma linha de separação
+print('-=' * 30)
+
+# len() conta quantos elementos existem dentro da lista
+print(f'Você digitou {len(valores)} elementos.')
+
+# Mostra a lista já organizada em ordem decrescente
+print(f'Os valores em ordem decrescente são {valores}')
+
+# Verifica se o número 5 está presente na lista
+if 5 in valores:
+    print('O valor 5 faz parte da lista!')
+
+# Caso o número 5 não esteja na lista
+else:
+    print('O valor 5 não faz parte da lista!')
