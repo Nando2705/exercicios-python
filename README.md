@@ -22,7 +22,7 @@ Os exercícios serão adicionados progressivamente conforme avanço nos estudos.
 | Exercício                          | Tema                | Conceitos praticados                       |
 | ---------------------------------- | ------------------- | ------------------------------------------ |
 | [Exercício 078](./exercicio078.py) | Maior e menor valor | Listas, `for`, `enumerate()`, condicionais 
-| [Exercício 079](https://github.com/Nando2705/exercicios-python/blob/main/exercicio079.py) | Valores únicos | Listas, `while`, condicionais, `not in`, `append()`, `sort()` |
+| [Exercício 079](https://github.com/Nando2705/exercicios-python/blob/main/079_valores_unicos.py) | Valores únicos | Listas, `while`, condicionais, `not in`, `append()`, `sort()` |
 
 > A tabela será atualizada conforme novos exercícios forem adicionados ao repositório.
 
