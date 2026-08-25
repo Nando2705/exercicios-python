@@ -1,0 +1,50 @@
+# Cria uma lista vazia para armazenar todos os valores digitados
+valores = []
+
+# Cria uma lista vazia para armazenar os valores ímpares
+impar = []
+
+# Cria uma lista vazia para armazenar os valores pares
+par = []
+
+# Loop infinito para permitir que o usuário digite vários números
+while True:
+
+    # Solicita um número ao usuário e adiciona diretamente à lista
+    valores.append(int(input('Digite um número: ')))
+
+    # Pergunta ao usuário se deseja continuar
+    # upper() transforma a resposta em maiúscula
+    # strip() remove espaços antes e depois da resposta
+    r = input('Quer continuar? [S/N]: ').upper().strip()
+
+    # Se o usuário digitar N, o loop é encerrado
+    if r == 'N':
+        break
+
+
+# Percorre todos os valores armazenados na lista
+# enumerate() fornece o valor de cada elemento
+for v in enumerate(valores):
+
+    # Verifica se o valor é par
+    # Números pares deixam resto 0 na divisão por 2
+    if v % 2 == 0:
+
+        # Adiciona o valor à lista de números pares
+        par.append(v)
+
+    # Caso não seja par, verifica se é ímpar
+    else:
+        # Adiciona o valor à lista de números ímpares
+        impar.append(v)
+
+
+# Mostra todos os valores digitados
+print(f'A lista completa é {valores}')
+
+# Mostra somente os valores pares
+print(f'A lista de pares é {par}')
+
+# Mostra somente os valores ímpares
+print(f'A lista de ímpares é {impar}')
