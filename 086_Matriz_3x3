@@ -1,0 +1,32 @@
+# Cria uma matriz com 3 linhas.
+# Cada lista vazia representa uma linha da matriz.
+matriz = [[], [], []]
+
+
+# Percorre as 3 linhas da matriz.
+for l in range(3):
+
+    # Para cada linha, percorre as 3 colunas.
+    for c in range(3):
+
+        # Solicita um valor mostrando a posição [linha, coluna].
+        valor = int(input(f'Digite um valor para [{l}, {c}]: '))
+
+        # Adiciona o valor digitado na linha correspondente da matriz.
+        matriz[l].append(valor)
+
+
+# Percorre cada linha da matriz.
+for linha in matriz:
+
+    # Percorre cada valor existente dentro da linha.
+    for valor in linha:
+
+        # Mostra cada valor entre colchetes.
+        # ^5 reserva 5 espaços e centraliza o valor.
+        # end='' impede que o print pule uma linha após cada valor.
+        print(f'[{valor:^5}]', end='')
+
+    # Depois de mostrar todos os valores da linha,
+    # pula para a próxima linha da matriz.
+    print()
