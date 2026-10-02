@@ -1,0 +1,39 @@
+# Cria uma lista principal contendo duas listas vazias.
+# numeros[0] será usada para armazenar os números pares.
+# numeros[1] será usada para armazenar os números ímpares.
+numeros = [[], []]
+
+
+# O range(1, 8) gera os números de 1 até 7.
+for n in range(1, 8):
+
+    # Solicita um número inteiro ao usuário.
+    # A variável n é usada apenas para indicar qual valor está sendo digitado.
+    valor = int(input(f'Digite o {n}º valor: '))
+
+    # O operador % retorna o resto da divisão.
+    # Se o resto da divisão do valor por 2 for 0,
+    # significa que o número é par.
+    if valor % 2 == 0:
+
+        # Adiciona o valor na primeira lista (lista dos pares).
+        numeros[0].append(valor)
+
+    else:
+        # Caso o número não seja par, ele é ímpar.
+        # Adiciona o valor na segunda lista (lista dos ímpares).
+        numeros[1].append(valor)
+
+
+# Coloca os números pares em ordem crescente.
+numeros[0].sort()
+
+# Coloca os números ímpares em ordem crescente.
+numeros[1].sort()
+
+
+# Mostra os números pares armazenados na primeira lista.
+print(f'Os valores pares digitados foram {numeros[0]}')
+
+# Mostra os números ímpares armazenados na segunda lista.
+print(f'Os valores ímpares digitados foram {numeros[1]}')
