@@ -26,7 +26,7 @@ Os exercícios serão adicionados progressivamente conforme avanço nos estudos.
 | [Exercício 081](https://github.com/Nando2705/exercicios-python/blob/main/081_Extraindo_dados) | Lista decrescente e busca de valor | Listas, `while`, `len()`, `sort()`, `in`, condicionais |
 | [Exercício 082](https://github.com/Nando2705/exercicios-python/blob/main/082_Dividindo_valores) | Separação de números pares e ímpares | Listas, `while`, `for`, `enumerate()`, `append()`, operador `%`, condicionais |
 | [Exercício 085](https://github.com/Nando2705/exercicios-python/blob/main/085_Lista%20com%20pares%20e%20%C3%ADmpares) | Valores pares e ímpares em uma lista composta | Listas compostas, `for`, `range()`, `append()`, `sort()`, operador `%`, condicionais |
-| [Exercício 085](https://github.com/Nando2705/exercicios-python/blob/main/085_Lista%20com%20pares%20e%20%C3%ADmpares) | Valores pares e ímpares em uma lista composta | Listas compostas, `for`, `range()`, `append()`, `sort()`, operador `%`, condicionais |
+| [Exercício 086](https://github.com/Nando2705/exercicios-python/blob/main/086_Matriz_3x3) | Matriz 3x3 com valores digitados pelo usuário | Listas compostas, matriz, `for`, `range()`, `append()`, índices, f-string |
 
 
 
