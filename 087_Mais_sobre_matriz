@@ -1,0 +1,67 @@
+# Cria uma matriz 3x3 utilizando três listas vazias.
+# Cada lista representa uma linha da matriz.
+matriz = [[], [], []]
+
+# Variáveis acumuladoras:
+# soma -> guarda a soma de todos os valores pares.
+# coluna -> guarda a soma dos valores da terceira coluna.
+# maior_valor -> guarda o maior valor encontrado na segunda linha.
+soma = coluna = maior_valor = 0
+
+
+# Percorre as três linhas da matriz.
+for l in range(3):
+
+    # Para cada linha, percorre as três colunas.
+    for c in range(3):
+
+        # Solicita o valor mostrando sua posição [linha, coluna].
+        valor = int(input(f'Digite um valor para [{l}, {c}]: '))
+
+        # Adiciona o valor na linha correspondente da matriz.
+        matriz[l].append(valor)
+
+        # Verifica se o valor é par.
+        # Se for, adiciona o valor à soma dos números pares.
+        if valor % 2 == 0:
+            soma += valor
+
+        # Como os índices começam em 0, c == 2 representa
+        # a terceira coluna da matriz.
+        # Soma somente os valores dessa coluna.
+        if c == 2:
+            coluna += valor
+
+        # l == 1 representa a segunda linha.
+        # c == 0 representa o primeiro valor dessa linha.
+        # Esse primeiro valor é usado como referência inicial
+        # para encontrarmos o maior valor da segunda linha.
+        if l == 1 and c == 0:
+            maior_valor = valor
+
+        # Enquanto estivermos na segunda linha, compara o valor
+        # atual com o maior valor encontrado até o momento.
+        # Se o valor atual for maior, ele passa a ser o maior.
+        if l == 1 and valor > maior_valor:
+            maior_valor = valor
+
+
+# Percorre cada linha da matriz para mostrar os valores.
+for linha in matriz:
+
+    # Percorre cada valor existente dentro da linha.
+    for valor in linha:
+
+        # Mostra os valores entre colchetes.
+        # ^5 reserva 5 espaços e centraliza o número.
+        # end='' mantém os valores da mesma linha lado a lado.
+        print(f'[{valor:^5}]', end='')
+
+    # Ao terminar uma linha da matriz, pula para a próxima.
+    print()
+
+
+# Exibe os resultados solicitados pelo exercício.
+print(f'A soma dos valores pares é {soma}')
+print(f'A soma dos valores da terceira coluna é {coluna}')
+print(f'O maior valor da segunda linha é {maior_valor}')
