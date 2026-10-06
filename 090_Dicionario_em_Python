@@ -1,0 +1,26 @@
+# Cria um dicionário vazio para armazenar os dados do aluno.
+aluno = {}
+
+# Recebe o nome do aluno e armazena na chave "nome".
+aluno['nome'] = input('Nome: ')
+
+# Recebe a média e armazena na chave "media".
+# A chave "nome" é utilizada para mostrar o nome do aluno no input.
+aluno['media'] = float(input(f'Média de {aluno["nome"]}: '))
+
+print('-=' * 25)
+
+# Verifica a média do aluno e define sua situação.
+if aluno['media'] <= 5:
+    aluno['situacao'] = 'REPROVADO'
+
+elif aluno['media'] <= 7:
+    aluno['situacao'] = 'RECUPERAÇÃO'
+
+else:
+    aluno['situacao'] = 'APROVADO'
+
+# Percorre o dicionário mostrando cada chave e seu respectivo valor.
+# k recebe a chave e v recebe o valor.
+for k, v in aluno.items():
+    print(f'  - {k} é igual a {v}')
