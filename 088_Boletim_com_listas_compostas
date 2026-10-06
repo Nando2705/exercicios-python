@@ -1,0 +1,64 @@
+# Lista principal que armazenará os dados de todos os alunos.
+dados = []
+
+# Variável usada para controlar se novos alunos serão cadastrados.
+resp = 'S'
+
+# Continua cadastrando enquanto o usuário não responder "N".
+while resp not in 'Nn':
+
+    # Recebe o nome e as duas notas do aluno.
+    nome = input('Nome: ')
+    n1 = float(input('Nota 1: '))
+    n2 = float(input('Nota 2: '))
+
+    # Calcula a média das duas notas.
+    media = (n1 + n2) / 2
+
+    # Cria uma lista com os dados do aluno.
+    # Estrutura: [nome, nota1, nota2, média]
+    aluno = [nome, n1, n2, media]
+
+    # Adiciona o aluno à lista principal.
+    dados.append(aluno)
+
+    # Pergunta se o usuário deseja cadastrar outro aluno.
+    resp = input('Quer continuar ? [S/N] ').upper().strip()
+
+
+# Exibe o boletim com o número, nome e média de cada aluno.
+print('-=' * 30)
+print(f'{"No.":<4}{"NOME":<10}{"MÉDIA":>8}')
+print('-' * 30)
+
+# enumerate() permite percorrer a lista obtendo:
+# c = índice do aluno
+# a = dados daquele aluno
+for c, a in enumerate(dados):
+    print(f'{c:<4}{a[0]:<10}{a[3]:>8.1f}')
+
+print('-' * 45)
+
+
+# Permite consultar individualmente as notas dos alunos.
+while True:
+
+    # O número digitado corresponde ao índice do aluno na lista "dados".
+    indice = int(input('Mostrar nota de qual aluno ? (999 interrompe): '))
+
+    # 999 encerra a consulta.
+    if indice == 999:
+        print('FINALIZANDO...')
+        break
+
+    # Verifica se existe um aluno nesse índice.
+    if indice <= len(dados) - 1:
+
+        # [0] acessa o nome do aluno.
+        # [1:3] pega somente as duas notas, sem incluir a média.
+        print(f'As notas de {dados[indice][0]} são {dados[indice][1:3]}')
+
+    else:
+        print('Número inválido!')
+
+    print('-' * 45)
