@@ -1,0 +1,45 @@
+# Exercício 093 - Cadastro de Jogador de Futebol
+
+# Cria um dicionário para armazenar os dados do jogador.
+jogador = {}
+
+# Cria uma lista para guardar os gols de cada partida.
+total_gols = []
+
+# Recebe o nome do jogador.
+jogador['nome'] = input('Nome do jogador: ')
+
+# Pergunta quantas partidas o jogador disputou.
+partidas = int(input(f"Quantas partidas {jogador['nome']} jogou? "))
+
+# Percorre cada partida e registra a quantidade de gols.
+for i in range(0, partidas):
+    gols = int(input(f'Quantos gols na partida {i}? '))
+    total_gols.append(gols)
+
+# Armazena a lista de gols no dicionário.
+jogador['gols'] = total_gols
+
+# Calcula o total de gols utilizando sum().
+jogador['total'] = sum(total_gols)
+
+# Mostra o dicionário completo.
+print(jogador)
+print('-=' * 30)
+
+# Percorre o dicionário mostrando cada chave e seu valor.
+for i, v in jogador.items():
+    print(f'O campo {i} tem o valor {v}')
+
+print('-=' * 30)
+
+# Mostra o nome e a quantidade de partidas disputadas.
+print(f"O jogador {jogador['nome']} jogou {len(jogador['gols'])} partidas.")
+
+# Mostra os gols marcados em cada partida.
+# i representa o índice e g representa a quantidade de gols.
+for i, g in enumerate(total_gols):
+    print(f'  => Na partida {i}, fez {g} gols.')
+
+# Mostra o total de gols armazenado no dicionário.
+print(f"Foi um total de {jogador['total']} gols.")
