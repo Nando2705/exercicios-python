@@ -30,6 +30,7 @@ Os exercícios serão adicionados progressivamente conforme avanço nos estudos.
 | [Exercício 087](https://github.com/Nando2705/exercicios-python/blob/main/087_Mais_sobre_matriz) | Análise de valores em uma matriz 3x3 | Matriz, listas compostas, `for`, `range()`, `append()`, operador `%`, acumuladores, condicionais |
 | [Exercício 089](https://github.com/Nando2705/exercicios-python/blob/main/088_Boletim_com_listas_compostas) | Cadastro de alunos, cálculo de médias e consulta individual de notas | Listas compostas, `while`, `enumerate()`, `append()`, fatiamento, índices, condicionais |
 | [Exercício 090](https://github.com/Nando2705/exercicios-python/blob/main/090_Dicionario_em_Python) | Cadastro de aluno com média e situação usando dicionário | Dicionários, chaves e valores, `items()`, `for`, condicionais, `if`, `elif`, `else` |
+| [Exercício 093](https://github.com/Nando2705/exercicios-python/blob/main/093_Cadastro_Jogador_Futebol/ex093.py) | Cadastro de jogador, gols por partida e total de gols | Dicionários, listas, `for`, `range()`, `append()`, `sum()`, `items()`, `enumerate()` |
 
 > A tabela será atualizada conforme novos exercícios forem adicionados ao repositório.
 
