@@ -31,7 +31,7 @@ Os exercícios serão adicionados progressivamente conforme avanço nos estudos.
 | [Exercício 089](https://github.com/Nando2705/exercicios-python/blob/main/088_Boletim_com_listas_compostas) | Cadastro de alunos, cálculo de médias e consulta individual de notas | Listas compostas, `while`, `enumerate()`, `append()`, fatiamento, índices, condicionais |
 | [Exercício 090](https://github.com/Nando2705/exercicios-python/blob/main/090_Dicionario_em_Python) | Cadastro de aluno com média e situação usando dicionário | Dicionários, chaves e valores, `items()`, `for`, condicionais, `if`, `elif`, `else` |
 | [Exercício 093](https://github.com/Nando2705/exercicios-python/blob/main/093_%20Cadastro_Jogador) | Cadastro de jogador, gols por partida e total de gols | Dicionários, listas, `for`, `range()`, `append()`, `sum()`, `items()`, `enumerate()` |
-| [Exercício 094](https://github.com/Nando2705/exercicios-python/blob/main/094_Cadastro_Pessoas_Dicionarios/ex094.py) | Cadastro de pessoas com cálculo de média, listagem de mulheres e pessoas acima da média | Listas, dicionários, `copy()`, `append()`, `join()`, `while`, `for`, condicionais |
+| [Exercício 094]https://github.com/Nando2705/exercicios-python/blob/main/094_Dicionarios_Listas) | Cadastro de pessoas com cálculo de média, listagem de mulheres e pessoas acima da média | Listas, dicionários, `copy()`, `append()`, `join()`, `while`, `for`, condicionais |
 
 > A tabela será atualizada conforme novos exercícios forem adicionados ao repositório.
 
