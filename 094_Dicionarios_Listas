@@ -1,0 +1,78 @@
+
+# Exercício 094 - Cadastro de Pessoas
+# Curso em Vídeo - Python
+
+# Lista principal para armazenar todos os cadastros.
+pessoas = []
+
+# Lista para guardar os nomes das mulheres.
+mulher = []
+
+# Dicionário para armazenar os dados de cada pessoa.
+pessoa = {}
+
+# Acumulador das idades para calcular a média.
+media = 0
+
+# Repete o cadastro até o usuário decidir parar.
+while True:
+    pessoa['nome'] = input('Nome: ')
+
+    # Recebe e valida o sexo.
+    while True:
+        pessoa['sexo'] = input('Sexo [M/F]: ').strip().upper()
+
+        if pessoa['sexo'] in ('F', 'M'):
+            break
+
+        print('ERRO! Responda apenas M ou F.')
+
+    # Guarda o nome caso a pessoa seja mulher.
+    if pessoa['sexo'] == 'F':
+        mulher.append(pessoa['nome'])
+
+    # Recebe a idade.
+    pessoa['idade'] = int(input('Idade: '))
+
+    # Adiciona uma cópia do dicionário à lista principal.
+    pessoas.append(pessoa.copy())
+
+    # Acumula as idades para calcular a média.
+    media += pessoa['idade']
+
+    # Pergunta se deseja continuar e valida a resposta.
+    while True:
+        resp = input('Quer continuar? [S/N] ').strip().upper()
+
+        if resp in ('S', 'N'):
+            break
+
+        print('ERRO! Responda apenas S ou N.')
+
+    # Encerra o cadastro quando a resposta for N.
+    if resp == 'N':
+        break
+
+# Calcula a média das idades.
+media = media / len(pessoas)
+
+print('-=' * 30)
+
+# A) Mostra a quantidade de pessoas cadastradas.
+print(f'A) Ao todo temos {len(pessoas)} pessoas cadastradas.')
+
+# B) Mostra a média das idades.
+print(f'B) A média de idade é de {media:.2f} anos.')
+
+# C) Mostra os nomes das mulheres separados por vírgula.
+print(f"C) As mulheres cadastradas foram {', '.join(mulher)}.")
+
+# D) Mostra as pessoas com idade acima da média.
+print('D) Lista das pessoas que estão acima da média:')
+
+# Percorre os dicionários armazenados na lista.
+for p in pessoas:
+    if p['idade'] > media:
+        print(f"   nome = {p['nome']}; sexo = {p['sexo']}; idade = {p['idade']};")
+
+print('<< ENCERRADO >>')
