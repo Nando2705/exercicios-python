@@ -1,0 +1,41 @@
+# ==============================================================================
+# Exercício Python 100: Funções para sortear e somar
+# Curso em Vídeo - Mundo 3: Funções (Parte 1)
+# ==============================================================================
+
+import time
+from random import randint
+
+
+def sorteia(lista):
+    #Sorteia 5 números inteiros entre 1 e 10 e adiciona na lista recebida.
+
+    print('Sorteando 5 valores da lista: ', end='')
+    for _ in range(0, 5):
+        num = randint(1, 10)
+        lista.append(num)
+        print(f'{num} ', end='', flush=True)
+        time.sleep(0.3)
+    print('PRONTO!')
+
+
+def somaPar(lista):
+    """Percorre os elementos de uma lista, identifica quais números
+    são pares através do operador de módulo (%) e exibe a soma total deles."""
+
+    soma = 0
+    for n in lista:
+        if n % 2 == 0:
+            soma += n
+    print(f'Somando os valores pares de {lista}, temos {soma}.')
+
+# PROGRAMA PRINCIPAL
+
+# Criação da lista vazia no escopo global
+numeros = list()
+
+# 1. Envia a lista para ser populada com 5 valores pseudoaleatórios
+sorteia(numeros)
+
+# 2. Envia a mesma lista (já preenchida) para computar a soma dos valores pares
+somaPar(numeros)
