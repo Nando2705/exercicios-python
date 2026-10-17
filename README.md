@@ -33,7 +33,7 @@ Os exercícios serão adicionados progressivamente conforme avanço nos estudos.
 | [Exercício 093](https://github.com/Nando2705/exercicios-python/blob/main/093_%20Cadastro_Jogador) | Cadastro de jogador, gols por partida e total de gols | Dicionários, listas, `for`, `range()`, `append()`, `sum()`, `items()`, `enumerate()` |
 | [Exercício 094](https://github.com/Nando2705/exercicios-python/blob/main/094_Dicionarios_Listas) | Cadastro de pessoas com cálculo de média, listagem de mulheres e pessoas acima da média | Listas, dicionários, `copy()`, `append()`, `join()`, `while`, `for`, condicionais |
 | [Exercício 100](https://github.com/Nando2705/exercicios-python/blob/main/100_Fun%C3%A7%C3%B5es_%20Soma_Par) | Sorteio de 5 valores em uma lista e cálculo da soma dos números pares | Funções (`def`), listas, `append()`, `random` (`randint`), `time.sleep()`, operador módulo (`%`), `for`, passagem por referência |
-| [Exercício 101](https://github.com/Nando2705/exercicios-python/blob/main/101_Funcoes_Votacao) | Função com retorno indicando a obrigatoriedade de voto com base na idade | Funções (`def`), `return`, escopo local, `datetime` (`date.today().year`), operadores relacionais e lógicos |
+| [Exercício 101](https://github.com/Nando2705/exercicios-python/blob/main/101_Fun%C3%A7%C3%A3o_Vota%C3%A7%C3%A3o) | Função com retorno indicando a obrigatoriedade de voto com base na idade | Funções (`def`), `return`, escopo local, `datetime` (`date.today().year`), operadores relacionais e lógicos |
 
 > A tabela será atualizada conforme novos exercícios forem adicionados ao repositório.
 
